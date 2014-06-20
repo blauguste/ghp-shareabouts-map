@@ -133,11 +133,9 @@
 
       <form id="comment">
         <fieldset>
-          <select name="comment">
             <input type="radio" name="size" id="size_1" value="1" /><label for="size_1">Not bad at all</label>
             <input type="radio" name="size" id="size_2" value="2" /><label for="size_2">Kinda bad</label>
             <input type="radio" name="size" id="size_3" value="3" /><label for="size_3">Really bad</label>
-          </select>
         </fieldset>
         {{^if submitter}}
         <p><label>Name <input name="submitter_name" type="text" value="{{ submitter_name }}"></input></label></p>
@@ -160,7 +158,7 @@
     <!-- TODO 7: Change the template of how a survey response is displayed. -->
     <script id="place-survey-item" type="text/x-handlebars-template">
       <div class="panel">
-        <p class="response-value response-value-comment">{{ comment }}</p>
+        <p class="response-value response-value-comment">{{ size }}</p>
 
         <small class="response-header clearfix">
           <strong class="response-submitter">
