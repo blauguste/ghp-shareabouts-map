@@ -133,11 +133,11 @@
 
       <form id="comment">
         <fieldset>
-            <input type="radio" name="size" id="size_1" value="small" /><label for="size_1">Not bad at all</label>
-            <input type="radio" name="size" id="size_2" value="medium" /><label for="size_2">Kinda bad</label>
-            <input type="radio" name="size" id="size_3" value="large" /><label for="size_3">Really fucking bad</label>
+            <input type="radio" name="size" id="size_1" value="1" /><label for="size_1">Not bad at all</label>
+            <input type="radio" name="size" id="size_2" value="2" /><label for="size_2">Kinda bad</label>
+            <input type="radio" name="size" id="size_3" value="3" /><label for="size_3">Really bad</label>
         </fieldset>
-        {{^if submitter}}l>
+        {{^if submitter}}
         <p><label>Name <input name="submitter_name" type="text" value="{{ submitter_name }}"></input></label></p>
         {{/if}}
 
